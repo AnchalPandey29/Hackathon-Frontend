@@ -74,7 +74,7 @@ const UserLeave = () => {
                         <div className="col-md-5" style={{ paddingRight: '20px' }}>
                             <div className="form-group">
                                 <div className="input-group date" id="datepicker" data-date-format="dd-mm-yyyy">
-                                    <input type="text" className="form-control" name="startDate" id="startDate" />
+                                    <input type="date" className="form-control" name="startDate" id="startDate" />
                                     <span className="input-group-addon">
                                         <span className="fa fa-calendar-alt fa-2x"></span>
                                     </span>
@@ -85,7 +85,7 @@ const UserLeave = () => {
                         <div className="col-md-5">
                             <div className="form-group">
                                 <div className="input-group date" id="datepicker1" data-date-format="dd-mm-yyyy">
-                                    <input type="text" className="form-control" name="endDate" />
+                                    <input type="date" className="form-control" name="endDate" />
                                     <span className="input-group-addon">
                                         <i className="fa fa-calendar-alt fa-2x"></i>
                                     </span>
