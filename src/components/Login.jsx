@@ -20,7 +20,7 @@ const LoginPage = () => {
 
   return (
     <div className='outer'>
-
+       
     <div className="login-container">
       <h2 className="login-heading">Login</h2>
       <form onSubmit={handleSubmit} className="login-form">
@@ -36,7 +36,7 @@ const LoginPage = () => {
       </form>
       {error && <p className="error-message">{error}</p>}
     </div>
-
+    <img src="\loginform.png" alt="Login" />
     </div>
     
   );
