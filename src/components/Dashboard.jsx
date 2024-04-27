@@ -21,6 +21,10 @@ const Dashboard = () => {
         </div>
         <ul>
           <div>
+            <li><a href="/">Home</a></li>
+          </div>
+         
+          <div>
             <li><a href="/employee">Employee Management</a></li>
           </div>
           <div>
