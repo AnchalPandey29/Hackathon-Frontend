@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Dashboard.css'; // Import CSS for styling
-import Header from './Header';
 
 const Dashboard = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -11,7 +10,7 @@ const Dashboard = () => {
 
   return (
     <div style={{ background: "#c6f2fd" }}>
-      <Header/>
+      
       {/* Left Sliding Drawer */}
       <div className={`drawer ${isDrawerOpen ? 'open' : ''}`} style={{ background: "#c6f2fd" }}>
         <div className="drawer-header">
@@ -25,7 +24,7 @@ const Dashboard = () => {
             <li><a href="/employee">Employee Management</a></li>
           </div>
           <div>
-            <li><a href="#">Attendance Tracking</a></li>
+            <li><a href="#">Leave Management</a></li>
           </div>
           <div>
             <li><a href="#">Training & Development</a></li>
@@ -37,7 +36,7 @@ const Dashboard = () => {
       </div>
 
       {/* Main Content */}
-      <div className='row' style={{ backgroundColor: "#5ac1db", height: "24vh", alignItems: "center", justifyContent: "center" }}>
+      <div className='row' style={{ backgroundColor: "#5ac1db", height: "30vh", alignItems: "center", justifyContent: "center" }}>
         {/* Opening/Closing Icon */}
         {!isDrawerOpen && (
           <div className="menu-icon" onClick={toggleDrawer}>
@@ -56,7 +55,7 @@ const Dashboard = () => {
       </div>
 
       <div className='row justify-content-center'>
-        <img src="/dash.png" alt="Dashboard image"  style={{ width: "632px" ,marginTop:"-50px"}} />
+        <img src="/dash.png" alt="" style={{ width: "632px" }} />
       </div>
     </div>
   );
