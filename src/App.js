@@ -6,6 +6,8 @@ import React from 'react'
 import LoginPage from './components/Login';
 import NotFound from './components/NotFound';
 import Contact from './components/Contact';
+import Dashboard from './components/Dashboard';
+import EmpMgmt from './components/EmployeeManagement';
 
 const App = () => {
   return (
@@ -13,8 +15,11 @@ const App = () => {
 
       <Routes>
         <Route element={<LoginPage/>} path="/login" />
-        <Route element={<Home/>} path="/home" />
-        <Route element={<Contact/>} path="/contact" />
+        <Route element={<Home/>} path="/" />
+        <Route element={<Contact/>} path="/contact" />  
+        <Route element={<Dashboard/>} path="/dashboard" />
+        <Route element={<EmpMgmt/>} path="/employee" />
+
 
         <Route path="*" element={<NotFound/>} />
       </Routes>
