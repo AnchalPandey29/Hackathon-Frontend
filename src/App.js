@@ -1,13 +1,25 @@
-
 import './App.css';
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import PayrollManagement from './components/PayrollManagement';
-function App() {
+import Home from './components/Home';
+import React from 'react'
+import LoginPage from './components/Login';
+import NotFound from './components/NotFound';
+
+const App = () => {
   return (
-   <div className="App">
-    <h1>Payroll Management System</h1>
-    <PayrollManagement/>
-   </div>
-  );
+    <BrowserRouter>
+
+      <Routes>
+        <Route element={<LoginPage/>} path="/login" />
+        <Route element={<Home/>} path="/home" />
+        {/* <Route element={</>} path="/login" /> */}
+
+        <Route path="*" element={<NotFound/>} />
+      </Routes>
+
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

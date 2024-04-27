@@ -1,0 +1,35 @@
+.homerow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    
+}
+
+.heroimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image{
+    width: 70%;
+    
+}
+.home-container{
+    
+    height: 100vh;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+span{
+  color: #00add8;
+  font-weight: bold;
+}
+svg{
+    margin-top: -100px;
+}
