@@ -33,7 +33,7 @@ const Home = () => {
               className='btn'
  
               style={{ backgroundColor: "#5ac1db", color: "white" }}
-              href="/main/startuplist" 
+              href="/login" 
             >
               Explore More
             </a>

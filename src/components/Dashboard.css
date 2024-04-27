@@ -1,0 +1,74 @@
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.drawer.open {
+    left: 0; /* Visible when open */
+}
+
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 101;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #5ac1db;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #444;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    margin-bottom: 25px;
+}
+
+ul li:hover {
+    color: #5ac1db;
+    font-weight: bold;
+}
+
+.menuimg{
+    height: 20px;
+}

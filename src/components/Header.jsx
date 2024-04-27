@@ -14,7 +14,7 @@ const Header = () => {
         {/* Left-aligned links */}
         <div className="navbar-nav mr-auto">
           <NavLink
-            to="/main/home"
+            to="/"
             className="nav-link hover-overlay"
             style={{ color: "black" }}
             activeClassName="active"
@@ -48,22 +48,13 @@ const Header = () => {
                 backgroundColor: "#5ac1db",
                 color: "white",
                 marginLeft: "10px",
+                marginTop:"20px",
               }}
             >
              Signin
             </NavLink>
             
-            <NavLink
-              to="/startup/dashboard"
-              className="btn btn-outline-dark"
-              style={{
-                backgroundColor: "#5ac1db",
-                marginLeft: "10px",
-                color: "white",
-              }}
-            >
-              Your Dashboard
-            </NavLink>
+            
           </li>
         </ul>
       </div>
