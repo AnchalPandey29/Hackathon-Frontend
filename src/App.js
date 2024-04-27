@@ -8,6 +8,8 @@ import NotFound from './components/NotFound';
 import Contact from './components/Contact';
 import Dashboard from './components/Dashboard';
 import EmpMgmt from './components/EmployeeManagement';
+import HRleavelist from './components/HRleavelist';
+import HRLeavedetail from './components/HRLeavedetail';
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route element={<Contact/>} path="/contact" />  
         <Route element={<Dashboard/>} path="/dashboard" />
         <Route element={<EmpMgmt/>} path="/employee" />
+        <Route element={<HRleavelist/>} path="/hrleavelist" />
+        {/* <Route element={<HRLeavedetail/>} path="/hrleavedetail" /> */}
 
 
         <Route path="*" element={<NotFound/>} />
