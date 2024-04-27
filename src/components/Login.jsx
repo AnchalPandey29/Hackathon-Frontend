@@ -36,7 +36,7 @@ const LoginPage = () => {
       </form>
       {error && <p className="error-message">{error}</p>}
     </div>
-    <img src="\loginform.png" alt="Login" />
+    <img className="loginimg" src="\loginform.png" alt="Login" />
     </div>
     
   );
