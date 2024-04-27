@@ -32,7 +32,9 @@ const EmpMgmt = () => {
 
     return (
         <div className="outer">
+            <div>
             <h1 style={{ textAlign: 'center', font: 'Sans-serif', color: '#3f51b5', marginBottom: '20px' }}><strong>Employee Data</strong></h1>
+            </div>
             <div style={{ height: 'auto' }}>
                 <table className="table align-middle mb-0 bg-white">
                     <thead className="bg-light">
