@@ -8,6 +8,7 @@ import NotFound from './components/NotFound';
 import Contact from './components/Contact';
 import Dashboard from './components/Dashboard';
 import EmpMgmt from './components/EmployeeManagement';
+import UserLeave from './components/UserLeave'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route element={<Contact/>} path="/contact" />  
         <Route element={<Dashboard/>} path="/dashboard" />
         <Route element={<EmpMgmt/>} path="/employee" />
+        <Route element={<UserLeave/>} path="/userleave" />
 
 
         <Route path="*" element={<NotFound/>} />
