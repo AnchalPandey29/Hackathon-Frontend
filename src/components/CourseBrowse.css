@@ -45,7 +45,7 @@
 
 .add-course-button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #5ac1db;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -80,7 +80,7 @@
 
 .delete-button {
     padding: 8px 12px;
-    background-color: #dc3545;
+    background-color: #5ac1db;
     color: #fff;
     border: none;
     border-radius: 5px;

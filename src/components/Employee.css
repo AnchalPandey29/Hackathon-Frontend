@@ -34,7 +34,7 @@
 }
 
 .employee-table th {
-  background-color: #007bff;
+  background-color: #5ac1db;
   color: #fff;
 }
 
@@ -89,7 +89,7 @@
 .employee-form button {
   margin-top: 10px;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #5ac1db;
   color: #fff;
   border: none;
   border-radius: 5px;
