@@ -49,8 +49,8 @@ const CourseBrowse = () => {
 
   return (
     <div className="course-browse-container">
-      <div className="top-banner">
-        <img src={bannerImg} alt="Banner" className="banner-image" />
+      <div className="top-banner" style={{background:"#5ac1db"}}>
+        {/* <img src={bannerImg} alt="Banner" className="banner-image" /> */}
         <div className="banner-text">
           <h1>Welcome to Course Browse</h1>
           <p>Discover and explore a wide range of courses</p>

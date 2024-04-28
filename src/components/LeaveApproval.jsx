@@ -3,6 +3,7 @@ import "./LeaveApproval.css";
 import { Button } from "@mui/material";
 import axios from "axios";
 const LeaveApproval = () => {
+  
   const [leaveRequests, setLeaveRequests] = useState([]);
 
   useEffect(() => {

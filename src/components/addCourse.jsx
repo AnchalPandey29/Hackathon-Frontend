@@ -26,7 +26,7 @@ const AddCourse = () => {
 
   return (
     <div className="add-course-container">
-      <div className="top-banner"></div>
+      <div className="top-banner" style={{background:"#5ac1db"}}></div>
 
       <div className="add-course-form">
         <div className="card">
