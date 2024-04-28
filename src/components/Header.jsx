@@ -5,13 +5,10 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark text-white">
-      {/* Container wrapper */}
       <div className="container">
-        {/* Navbar brand */}
         <NavLink className="navbar-brand" to="/main/home">
           <img src="\logo.png" height={55} alt="WorkConnect" loading="lazy" />
         </NavLink>
-        {/* Left-aligned links */}
         <div className="navbar-nav mr-auto">
           <NavLink
             to="/"
@@ -22,7 +19,7 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            to="/main/aboutus"
+            to="/aboutus"
             className="nav-link hover-overlay"
             style={{ color: "black" }}
             activeClassName="active"
@@ -38,7 +35,6 @@ const Header = () => {
             Contact
           </NavLink>
         </div>
-        {/* Right-aligned links */}
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <NavLink
@@ -48,17 +44,14 @@ const Header = () => {
                 backgroundColor: "#5ac1db",
                 color: "white",
                 marginLeft: "10px",
-                marginTop:"20px",
+                marginTop: "20px",
               }}
             >
-             Signin
+              Signin
             </NavLink>
-            
-            
           </li>
         </ul>
       </div>
-      {/* Container wrapper */}
     </nav>
   );
 };

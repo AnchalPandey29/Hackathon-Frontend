@@ -1,0 +1,54 @@
+.payment-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.unpaid-employees,
+.paid-employees {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.unpaid-employees h2,
+.paid-employees h2 {
+    margin-bottom: 10px;
+}
+
+.unpaid-employees ul,
+.paid-employees ul {
+    list-style: none;
+    padding: 0;
+}
+
+.unpaid-employees li,
+.paid-employees li {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.unpaid-employees li:hover,
+.paid-employees li:hover {
+    background-color: #e0e0e0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

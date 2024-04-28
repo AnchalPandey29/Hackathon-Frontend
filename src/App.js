@@ -11,6 +11,9 @@ import EmpMgmt from "./components/EmployeeManagement";
 import CourseBrowse from "./components/CourseBrowse";
 import AddCourse from "./components/addCourse";
 import LeaveApproval from "./components/LeaveApproval";
+import UserLeave from "./components/UserLeave";
+import PaymentComponent from "./components/PayRoll";
+import AboutUs from "./components/aboutUs";
 
 const App = () => {
   return (
@@ -19,11 +22,14 @@ const App = () => {
         <Route element={<LoginPage />} path="/login" />
         <Route element={<Home />} path="/" />
         <Route element={<Contact />} path="/contact" />
+        <Route element={<AboutUs />} path="/aboutus" />
         <Route element={<Dashboard />} path="/dashboard" />
         <Route element={<EmpMgmt />} path="/employee" />
         <Route element={<CourseBrowse />} path="/course" />
         <Route element={<AddCourse />} path="/addCourse" />
         <Route element={<LeaveApproval />} path="/leaveMng" />
+        <Route element={<UserLeave />} path="/user-profile" />
+        <Route element={<PaymentComponent />} path="/payroll" />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

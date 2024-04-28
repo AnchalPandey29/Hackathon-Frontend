@@ -1,16 +1,15 @@
 import React from "react";
-import "./AboutUs.css"; // Import the CSS file for styling
-import saurabhImg from "./saurabh.jpg"
-import PriyanshuImg from "./priya.jpg";
-import AdrijaImg from "./adrija.jpg";
-// import AnchalImg from "./anchal.jpg";
-// import RishiImg from "./rishi.jpg";
+import "./AboutUs.css";
+import saurabhImg from "../assets/saurabh.jpg"
+import PriyanshuImg from "../assets/priya.jpg";
+import AdrijaImg from "../assets/adrija.jpg";
+import AnchalImg from "../assets/Anchal.jpg";
+import RishiImg from "../assets/Rishab.jpg";
 
 
 const AboutUs = () => {
   return (
     <div className="about-container">
-      {/* About Us Header */}
       <div className="about-header">
         <h1>About Us</h1>
         <p>
@@ -18,8 +17,6 @@ const AboutUs = () => {
           Management System.
         </p>
       </div>
-
-      {/* About Us Section */}
       <div className="about-us">
         <h2>About Our HRMS</h2>
         <p>
@@ -37,8 +34,6 @@ const AboutUs = () => {
           evaluations.
         </p>
       </div>
-
-      {/* Mission Section */}
       <div className="about-mission">
         <h2>Our Mission</h2>
         <p>
@@ -55,12 +50,9 @@ const AboutUs = () => {
           efficient and enjoyable for everyone involved.
         </p>
       </div>
-
-      {/* Team Section */}
       <div className="about-team">
         <h2>Meet Our Team</h2>
         <div className="team-members">
-          {/* Team Member 1 */}
           <div className="team-member">
             <img
               src={PriyanshuImg}
@@ -72,8 +64,6 @@ const AboutUs = () => {
               <br /> 23MCA0257
             </p>
           </div>
-
-          {/* Team Member 2 */}
           <div className="team-member">
             <img src={saurabhImg} alt="Team Member 2" className="team-photo" />
             <p>
@@ -81,8 +71,6 @@ const AboutUs = () => {
               23MCA0263
             </p>
           </div>
-
-          {/* Team Member 3 */}
           <div className="team-member">
             <img src={AdrijaImg} alt="Team Member 3" className="team-photo" />
             <p>
@@ -90,15 +78,12 @@ const AboutUs = () => {
               23MCA0295
             </p>
           </div>
-
-          {/* New row */}
           <div className="team-member">
-            <img src={AdrijaImg} alt="Team Member 4" className="team-photo" />
+            <img src={RishiImg} alt="Team Member 4" className="team-photo" />
             <p>Rishab Jaiswal <br /> 23MCA0254</p>
           </div>
-
           <div className="team-member">
-            <img src={saurabhImg} alt="Team Member 5" className="team-photo" />
+            <img src={AnchalImg} alt="Team Member 5" className="team-photo" />
             <p style={{ padding: "2px" }}>Anchal Pandey <br /> 23MCA0246</p>
           </div>
         </div>

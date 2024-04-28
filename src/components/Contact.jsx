@@ -53,7 +53,7 @@ const Contact = () => {
       </div>
       <Formik
         initialValues={{ name: '', email: '', message: '', copy: true }}
-        validationSchema={ContactSchema} // Added the validation schema here
+        validationSchema={ContactSchema}
         onSubmit={userSubmit}
       >
         {({ isSubmitting }) => (
@@ -63,28 +63,23 @@ const Contact = () => {
                 <p className="h4">Let us know what you think</p>
                 <div className='row mt-5'>
                   <div className='col-md-6'>
-                    {/* Name input */}
                     <div className="form-outline mb-4">
                       <Field type="text" className="form-control" name="name" placeholder="Name" />
                       <ErrorMessage name="name" component="div" className="error-message" />
                     </div>
                   </div>
                   <div className='col-md-6'>
-                    {/* Email input */}
                     <div className="form-outline mb-4">
                       <Field type="email" className="form-control" name="email" placeholder="Email" />
                       <ErrorMessage name="email" component="div" className="error-message" />
                     </div>
                   </div>
                 </div>
-                {/* Message input */}
                 <div className="form-outline mb-4" data-mdb-input-init="">
                   <Field as="textarea" className="form-control" id="textAreaExample" rows={4} name="message" placeholder="Message" />
-                 
+
                   <ErrorMessage name="message" component="div" className="error-message" />
                 </div>
-                
-                {/* Submit button */}
                 <button type="submit" disabled={isSubmitting} className="btn btn-block mb-4" style={{ backgroundColor: "#5ac1db", color: "#fffefe", width: "200px" }}>Send</button>
               </div>
             </Form>

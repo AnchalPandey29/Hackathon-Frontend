@@ -1,41 +1,38 @@
-import React,{useState} from "react";
-import './Dashboard.css'; 
+import React, { useState } from "react";
+import './Dashboard.css';
 
 
 
 const UserLeave = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen);
-  };
+    const toggleDrawer = () => {
+        setIsDrawerOpen(!isDrawerOpen);
+    };
     return (
         <div>
-             {/* Left Sliding Drawer */}
-      <div className={`drawer ${isDrawerOpen ? 'open' : ''}`} style={{ background: "#c6f2fd" }}>
-        <div className="drawer-header">
-          <h3 style={{ marginTop: "20px", marginBottom: "20px" }}>Menu</h3>
-          <button className="close-btn" onClick={toggleDrawer}>
-            <img src="menu.png" alt="Close" style={{ width: "20px" }} />
-          </button>
-        </div>
-        <ul>
-          <div>
-            <li><a href="/employee">Employee Management</a></li>
-          </div>
-          <div>
-            <li><a href="#">Leave Management</a></li>
-          </div>
-          <div>
-            <li><a href="#">Training & Development</a></li>
-          </div>
-          <div>
-            <li><a href="#">Pay-roll Management</a></li>
-          </div>
-        </ul>
-      </div>
-
-            {/* Form */}
+            <div className={`drawer ${isDrawerOpen ? 'open' : ''}`} style={{ background: "#c6f2fd" }}>
+                <div className="drawer-header">
+                    <h3 style={{ marginTop: "20px", marginBottom: "20px" }}>Menu</h3>
+                    <button className="close-btn" onClick={toggleDrawer}>
+                        <img src="menu.png" alt="Close" style={{ width: "20px" }} />
+                    </button>
+                </div>
+                <ul>
+                    <div>
+                        <li><a href="/employee">Employee Management</a></li>
+                    </div>
+                    <div>
+                        <li><a href="#">Leave Management</a></li>
+                    </div>
+                    <div>
+                        <li><a href="#">Training & Development</a></li>
+                    </div>
+                    <div>
+                        <li><a href="#">Pay-roll Management</a></li>
+                    </div>
+                </ul>
+            </div>
             <div className="container mt-5">
                 <form action="./core/application-submission.php" method="post" encType="multipart/form-data">
                     <h2 className="text-center">Apply for Leave</h2>
@@ -95,7 +92,7 @@ const UserLeave = () => {
                     </div>
 
                     <div className="row" style={{ paddingTop: '30px' }}>
-                        
+
                         <div className="col-md-6">
                             <div className="form-group">
                                 <label>Leave Description</label>
@@ -111,20 +108,20 @@ const UserLeave = () => {
                     </div>
 
                     <div className="row">
-                    <div className="col-md-6">
+                        <div className="col-md-6">
                             <div className="form-group">
                                 <label>Leave Type</label>
-                            <div className="input-field">
-                            <div className="btn">
-                                <select id="leaveType" name="leaveType">
-                                <option value="HomeTown">HomeTown</option>
-                                <option value="LocalFestival">LocalFestival</option>
-                                <option value="Condolence">Condolence</option>
-                                <option value="Emergency">Emergency</option>
-                                <option value="FamilyFunction">FamilyFunction</option>
-                                <option value="Others">Others</option>
-                                </select>
-                                </div>
+                                <div className="input-field">
+                                    <div className="btn">
+                                        <select id="leaveType" name="leaveType">
+                                            <option value="HomeTown">HomeTown</option>
+                                            <option value="LocalFestival">LocalFestival</option>
+                                            <option value="Condolence">Condolence</option>
+                                            <option value="Emergency">Emergency</option>
+                                            <option value="FamilyFunction">FamilyFunction</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -7,9 +7,7 @@
 .leave-approval-cards {
     display: flex;
     flex-wrap: wrap;
-    /* Allows wrapping into multiple rows */
     gap: 1rem;
-    /* Space between cards */
 }
 
 .leave-card {
@@ -18,7 +16,6 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     flex-basis: 30%;
-    /* Allows for 3 cards per row in larger screens */
 }
 
 .leave-card h3 {
@@ -27,18 +24,14 @@
 
 .leave-card p {
     margin: 0.5rem 0;
-    /* Space between text lines */
 }
 
 .leave-card-actions {
     display: flex;
     justify-content: space-between;
-    /* Space out the buttons */
     margin-top: 1rem;
-    /* Gap between text and buttons */
 }
 
 .leave-card-actions button {
     min-width: 100px;
-    /* Ensure buttons are not too small */
 }

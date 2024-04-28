@@ -18,7 +18,6 @@ const LeaveApproval = () => {
     fetchLeaveRequests();
   }, []);
 
-  // Handler for approving a leave request
   const handleApprove = async (employeeId) => {
     try {
       await axios.post(`http://localhost:5000/api/leave-requests/approve/${employeeId}`);
@@ -29,8 +28,6 @@ const LeaveApproval = () => {
       console.error("Error approving leave:", error);
     }
   };
-
-  // Handler for rejecting a leave request
   const handleReject = async (employeeId) => {
     try {
       await axios.post(`http://localhost:5000/api/leave-requests/reject/${employeeId}`);

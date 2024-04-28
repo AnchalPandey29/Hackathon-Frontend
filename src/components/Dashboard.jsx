@@ -21,7 +21,7 @@ const Dashboard = () => {
           <div>
             <li><a href="/">Home</a></li>
           </div>
-         
+
           <div>
             <li><a href="/employee">Employee Management</a></li>
           </div>
@@ -32,7 +32,7 @@ const Dashboard = () => {
             <li><a href="/course">Training & Development</a></li>
           </div>
           <div>
-            <li><a href="#">Pay-roll Management</a></li>
+            <li><a href="/payroll">Pay-roll Management</a></li>
           </div>
         </ul>
       </div>

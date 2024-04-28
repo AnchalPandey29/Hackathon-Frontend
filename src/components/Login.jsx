@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Login.css'; // Import the CSS file for styling
+import './Login.css';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -12,7 +12,7 @@ const LoginPage = () => {
     try {
       const response = await axios.post('http://localhost:5000/api/login/', { email, password });
       const { redirectUrl } = response.data;
-      window.location.href = redirectUrl; // Redirect to the appropriate page
+      window.location.href = redirectUrl;
     } catch (err) {
       setError('Invalid email or password');
     }
