@@ -1,0 +1,121 @@
+/* Container for the About Us page */
+.about-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* About Us header styling */
+.about-header {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid #00add8;
+    animation: fadeIn 2s;
+    /* Simple fade-in animation */
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #00add8;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* About Our HRMS styling */
+.about-us {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s;
+    /* Adding animation to new sections */
+}
+
+.about-us h2 {
+    color: #00add8;
+    /* Consistent color for headers */
+}
+
+/* About Us mission styling */
+.about-mission {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s;
+}
+
+.about-mission h2 {
+    color: #00add8;
+}
+
+/* About Us team styling */
+.about-team {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    /* Consistent width for all cards */
+    height: 300px;
+    /* Consistent height */
+}
+
+.team-photo {
+    width: 100%;
+    /* Auto-adjusts to card width */
+    height: 80%;
+    /* Fixed height for consistent image size */
+    object-fit: cover;
+    /* Ensures image fits without distortion */
+    border-radius: 50%;
+    /* Rounded edges */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+    margin-top: 1rem;
+    /* Space between image and text */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    overflow: hidden;
+    /* Hide overflow */
+    text-overflow: ellipsis;
+    /* Show ellipsis when text overflows */
+    font-size: 1rem;
+    /* Adjust font size for readability */
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        /* Initial position for animation */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Final position */
+    }
+}
